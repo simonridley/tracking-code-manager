@@ -1,0 +1,43 @@
+{
+    "name": "simonridley/tracking-code-manager",
+    "keywords": [
+        "statamic",
+        "addon",
+        "statamic-v3",
+        "statamic-addon",
+        "tracking",
+        "codes",
+        "pixels",
+        "google",
+        "analytics"
+    ],
+    "homepage": "https://twitter.com/simonridley",
+    "license": "proprietary",
+    "type": "statamic-addon",
+    "authors": [
+        {
+            "name": "Simon Ridley",
+            "email": "statamic@simonridley.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "statamic@simonridley.co.uk"
+    },
+    "autoload": {
+        "psr-4": {
+            "Simonridley\\TrackingCodeManager\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Tracking Code Manager",
+            "description": "Tracking Code Manager addon"
+        },
+        "laravel": {
+            "providers": [
+                "Simonridley\\TrackingCodeManager\\ServiceProvider"
+            ]
+        }
+    }
+}
