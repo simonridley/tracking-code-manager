@@ -27,7 +27,7 @@ Add the three output tags to your main layout file in the appropriate places:
 
 ## Issues / Contributing
 
-Find a bug? Have a feature request? I'd be happy to help! Open an issue [on github](https://github.com/austenc/socialize) or reach out on twitter
+Find a bug? Have a feature request? I'd be happy to help! Open an issue on github or reach out on twitter
 
 ## License
 
