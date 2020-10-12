@@ -36,11 +36,11 @@ class TrackingCodeTags extends Tags
 
         $scripts = Arr::pluck($filtered, 'script');
 
-        $output = '<!-- tracking code manager '.$tag.' scritps -->';
+        $output = '<!-- tracking code manager '.$tag.' scripts -->';
         foreach($scripts as $script){
             $output .= $script;
         }
-        $output .= '<!-- end tracking code manager '.$tag.' scritps -->';
+        $output .= '<!-- end tracking code manager '.$tag.' scripts -->';
         return $output;
 
         return '';
