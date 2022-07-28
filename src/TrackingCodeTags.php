@@ -26,7 +26,7 @@ class TrackingCodeTags extends Tags
         ->merge(YAML::file(base_path('content/tracking-codes.yaml'))->parse())
         ->all();
 
-        if(!isset($values['enabled']) && $values['enabled'] == false || !isset($values['scripts'])){
+        if(!isset($values['enabled']) || $values['enabled'] == false || !isset($values['scripts'])){
             return '';
         }
         
