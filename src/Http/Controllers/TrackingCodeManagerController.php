@@ -16,7 +16,7 @@ class TrackingCodeManagerController extends Controller
     
     public function index(Request $request)
     {
-        $blueprint = Blueprint::makeFromSections(FooFields::getOrganizationFields());
+        $blueprint = Blueprint::makeFromTabs(FooFields::getOrganizationFields());
         $fields = $blueprint->fields();
         
         $values = collect(YAML::file(__DIR__.'/../content/tracking-codes.yaml')->parse())
@@ -36,7 +36,7 @@ class TrackingCodeManagerController extends Controller
     
     public function update(Request $request): void
     {
-        $blueprint = Blueprint::makeFromSections(FooFields::getOrganizationFields());
+        $blueprint = Blueprint::makeFromTabs(FooFields::getOrganizationFields());
         $fields = $blueprint->fields();
 
         $fields = $fields->addValues($request->all());
